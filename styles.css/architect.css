@@ -14,6 +14,14 @@
     text-align: center;
     padding: 20px 24px;
     cursor: pointer;
+    margin-top: 24px;
+
+}
+.text-light-gray{
+    color:#727272; 
+    font-size: 1rem;
+    
+    
 
 }
 
@@ -60,15 +68,49 @@ nav li {
     font-weight: 700;
     color: #131313;
 }
-.banner-description{
-    color:#727272; 
-    font-size: 1rem;
-    text-align: center;
 
-}
 .banner img {
     width: 100%;
+    
 }
+/* -----Features----- */
+main{
+    max-width: 1440px;
+    margin: 70px auto;
+}
+.features-container{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+   
+}
+.features-images{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+}
+.features-content{
+    padding-right: 70px;
+    padding-left: 70px;
+}
+.features-title{
+    font-size: 2.8rem;
+    
+}
+.quick-list{
+   color: #727272;
+   font-weight: 500;
+}
+.of-our{
+    color: #131313;
+    font-weight: 700;
+
+}
+.features{
+    color: #FF900E;
+    font-weight: 700;
+}
+
 
 
 
@@ -88,11 +130,12 @@ nav li {
     .banner-title{
         font-size: 2rem;
     }
-    nav{
+    nav,.features-container{
         flex-direction: column;
     }
-    nav ul{
-
+    .features-images{
+        grid-template-columns: 1fr;
+        padding: 20px;
     }
     
 }
@@ -101,7 +144,7 @@ nav li {
     header{
         padding: 50px;
     }
-    nav{
+    nav,.features-container{
         flex-direction: column;
     }
     nav ul{
