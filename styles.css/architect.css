@@ -51,7 +51,7 @@ nav li {
     font-size: 1rem;
 }
 
-.nav-title {
+.section-title {
     font-size: 3rem;
     font-weight: 700;
     color: #131313;
@@ -177,9 +177,35 @@ main {
     margin-left: 90px;
     
 }
+/* ------Facts section styles-------  */
+.facts-container{
+    display: flex;
+    justify-content: space-around;
+}
 
+.facts-container .facts-block{
+    
+    border: 1px solid rgb(255, 144, 14);
+    border-radius: 8px;
+    text-align: center;
+    padding: 30px ;
+    
+}
+.facts-container .facts-block .stats{
+    color: rgb(66, 66, 66);
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
 
+}
+.facts-container .facts-block .stats-title{
+    color: rgb(114, 114, 114);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 5px;
 
+}
 
 
 
