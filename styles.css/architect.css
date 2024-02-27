@@ -100,7 +100,8 @@ main {
     padding-right: 70px;
     padding-left: 70px;
 }
-.experience-container .card-title{
+
+.experience-container .card-title {
     border-left: 5px solid rgb(255, 144, 14);
     padding-left: 20px;
 }
@@ -151,47 +152,53 @@ main {
     font-weight: 600;
 
 }
-.experience-badge{
+
+.experience-badge {
     position: relative;
     bottom: 100px;
     width: 342px;
-    
+
     color: #FFFFFF;
     border-radius: 8px;
     background: rgb(255, 144, 14);
     text-align: center;
     padding: 10px 20px;
 }
-#year{
- font-weight: 700;
- font-size: 3rem;
- margin: 20px;
+
+#year {
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 20px;
 
 }
-#experience{
+
+#experience {
     font-weight: 00;
     font-size: 1.5rem;
     margin: 0;
 }
-.architect-img img{
+
+.architect-img img {
     margin-left: 90px;
-    
+
 }
+
 /* ------Facts section styles-------  */
-.facts-container{
+.facts-container {
     display: flex;
     justify-content: space-around;
 }
 
-.facts-container .facts-block{
-    
+.facts-container .facts-block {
+
     border: 1px solid rgb(255, 144, 14);
     border-radius: 8px;
     text-align: center;
-    padding: 30px ;
-    
+    padding: 30px;
+
 }
-.facts-container .facts-block .stats{
+
+.facts-container .facts-block .stats {
     color: rgb(66, 66, 66);
     font-size: 2.8rem;
     font-weight: 600;
@@ -199,11 +206,44 @@ main {
     margin-bottom: 10px;
 
 }
-.facts-container .facts-block .stats-title{
+
+.facts-container .facts-block .stats-title {
     color: rgb(114, 114, 114);
     font-size: 1.25rem;
     font-weight: 600;
     margin-top: 5px;
+
+}
+
+/* ----Sponsor section style---- */
+.sponsors {
+    text-align: center;
+}
+
+.sponsors-img-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    gap: 20px;
+}
+
+/* -----footer section style----- */
+.footer {
+    width: 1440px;
+    height: 100px;
+    border-radius: 8px;
+    background: rgb(255, 244, 231);
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+.footer-detail {
+    font-size: 1.25rem;
+    font-weight: 400;
 
 }
 
@@ -212,7 +252,9 @@ main {
 /* =======Responsive Styles======= */
 /* ---Mobile devices--- */
 @media screen and (max-width:576px) {
-    header {
+
+    header,
+    .facts-container {
         padding: 20px;
     }
 
@@ -220,36 +262,68 @@ main {
         font-size: 0.8rem;
     }
 
-    .banner-title {
+    .banner-title,
+    .section-title {
         font-size: 2rem;
     }
 
     nav,
     .features-container,
-    .experience-container {
+    .experience-container,
+    .facts-container,
+    .sponsors-img-container {
         flex-direction: column;
+        gap: 10px;
+        padding: 10px;
     }
+
+    .sponsors-img-container img {
+        width: 60%;
+
+    }
+
+    .facts-container {
+        width: 60%;
+        margin: 20px;
+
+    }
+
 
     .features-images {
         grid-template-columns: 1fr;
         padding: 20px;
     }
-    .architect-img img{
+
+    .architect-img img {
         width: 100%;
         margin: 0;
-        
+
     }
-    .experience-badge{
-    
+
+    .experience-badge {
+
         max-width: 200px;
     }
-    #year{
+
+    #year {
         font-weight: 700;
         font-size: 2rem;
         margin: 10px;
-       
-       }
-    
+
+    }
+
+
+}
+
+.footer {
+    width: 440px;
+    height: 50px;
+
+}
+
+.footer-detail {
+    font-size: .50rem;
+    font-weight: 400;
 
 }
 
@@ -258,6 +332,7 @@ main {
     header {
         padding: 50px;
     }
+
     .btn-primary {
         font-size: 0.8rem;
     }
@@ -269,15 +344,35 @@ main {
 
     nav,
     .features-container,
-    .experience-container {
+    .experience-container,
+    .facts-container {
         flex-direction: column;
+
+        gap: 10px;
+        padding: 20px;
+
     }
 
-    .architect-img img{
-        width: 100%;
+    .facts-container {
+       
+    }
+
+    .features-images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+       
+        padding: 50px;
+    }
+    .features-images img{
+        width: 50%;
+    }
+
+    .architect-img img {
+        width: 90%;
         
     }
-    .experience-card{
+
+    .experience-card {
         padding-left: 30px;
     }
 
