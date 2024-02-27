@@ -1,0 +1,112 @@
+/* ---Work Sans fonts from Google ------ */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* -----Shared Styles----- */
+* {
+    font-family: "Work Sans", sans-serif;
+}
+.btn-primary{
+    border-radius: 8px;
+    border: 0;
+    background: rgb(255, 144, 14);
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px 24px;
+    cursor: pointer;
+
+}
+
+/* ----header styles----- */
+header {
+    background-color: rgba(255, 144, 14, 0.1);
+    padding: 50px 240px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav>ul {
+    display: flex;
+
+}
+
+nav li {
+    list-style: none;
+    margin-right: 30px;
+    font-size: 1rem;
+}
+
+.nav-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #131313;
+}
+
+/* --------banner styles----- */
+.banner-content {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+}
+
+.banner-title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #131313;
+}
+.banner-description{
+    color:#727272; 
+    font-size: 1rem;
+    text-align: center;
+
+}
+.banner img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+/* =======Responsive Styles======= */
+/* ---Mobile devices--- */
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    .btn-primary{
+      font-size: 0.8rem;
+    }
+    .banner-title{
+        font-size: 2rem;
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav ul{
+
+    }
+    
+}
+/* -----Tablet or Medium devices---- */
+@media screen and (min-width:576px) and (max-width:992px) {
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav ul{
+
+    }
+    
+    
+}
