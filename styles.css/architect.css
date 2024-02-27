@@ -1,10 +1,12 @@
 /* ---Work Sans fonts from Google ------ */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* -----Shared Styles----- */
 * {
     font-family: "Work Sans", sans-serif;
 }
-.btn-primary{
+
+.btn-primary {
     border-radius: 8px;
     border: 0;
     background: rgb(255, 144, 14);
@@ -17,11 +19,12 @@
     margin-top: 24px;
 
 }
-.text-light-gray{
-    color:#727272; 
+
+.text-light-gray {
+    color: #727272;
     font-size: 1rem;
-    
-    
+
+
 
 }
 
@@ -54,7 +57,7 @@ nav li {
     color: #131313;
 }
 
-/* --------banner styles----- */
+/* --------banner section styles----- */
 .banner-content {
     max-width: 800px;
     text-align: center;
@@ -71,47 +74,109 @@ nav li {
 
 .banner img {
     width: 100%;
-    
+
 }
-/* -----Features----- */
-main{
+
+/* -----Features section styles----- */
+main {
     max-width: 1440px;
     margin: 70px auto;
 }
-.features-container{
+
+.features-container {
     display: flex;
     align-items: center;
-    margin: 0 auto;
-   
+    margin-bottom: 150px;
+
 }
-.features-images{
+
+.features-images {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
 }
-.features-content{
+
+.features-content {
     padding-right: 70px;
     padding-left: 70px;
 }
-.features-title{
+.experience-container .card-title{
+    border-left: 5px solid rgb(255, 144, 14);
+    padding-left: 20px;
+}
+
+.card-title {
     font-size: 2.8rem;
-    
+
 }
-.quick-list{
-   color: #727272;
-   font-weight: 500;
+
+.quick-list {
+    color: #727272;
+    font-weight: 500;
 }
-.of-our{
+
+.of-our {
     color: #131313;
     font-weight: 700;
 
 }
-.features{
+
+.features {
     color: #FF900E;
     font-weight: 700;
 }
 
+/* ----Experience Section style----- */
+.experience-container {
+    display: flex;
+    align-items: center;
+    gap: 100px;
 
+
+}
+
+.experience-card .skills {
+
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    background: rgb(255, 255, 255);
+}
+
+.features-title {
+    color: rgb(19, 19, 19);
+
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.experience-badge{
+    position: relative;
+    bottom: 100px;
+    width: 342px;
+    
+    color: #FFFFFF;
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+    text-align: center;
+    padding: 10px 20px;
+}
+#year{
+ font-weight: 700;
+ font-size: 3rem;
+ margin: 20px;
+
+}
+#experience{
+    font-weight: 00;
+    font-size: 1.5rem;
+    margin: 0;
+}
+.architect-img img{
+    margin-left: 90px;
+    
+}
 
 
 
@@ -121,35 +186,74 @@ main{
 /* =======Responsive Styles======= */
 /* ---Mobile devices--- */
 @media screen and (max-width:576px) {
-    header{
+    header {
         padding: 20px;
     }
-    .btn-primary{
-      font-size: 0.8rem;
+
+    .btn-primary {
+        font-size: 0.8rem;
     }
-    .banner-title{
+
+    .banner-title {
         font-size: 2rem;
     }
-    nav,.features-container{
+
+    nav,
+    .features-container,
+    .experience-container {
         flex-direction: column;
     }
-    .features-images{
+
+    .features-images {
         grid-template-columns: 1fr;
         padding: 20px;
     }
+    .architect-img img{
+        width: 100%;
+        margin: 0;
+        
+    }
+    .experience-badge{
     
+        max-width: 200px;
+    }
+    #year{
+        font-weight: 700;
+        font-size: 2rem;
+        margin: 10px;
+       
+       }
+    
+
 }
+
 /* -----Tablet or Medium devices---- */
 @media screen and (min-width:576px) and (max-width:992px) {
-    header{
+    header {
         padding: 50px;
     }
-    nav,.features-container{
+    .btn-primary {
+        font-size: 0.8rem;
+    }
+
+    .banner-title {
+        font-size: 2rem;
+    }
+
+
+    nav,
+    .features-container,
+    .experience-container {
         flex-direction: column;
     }
-    nav ul{
 
+    .architect-img img{
+        width: 100%;
+        
     }
-    
-    
+    .experience-card{
+        padding-left: 30px;
+    }
+
+
 }
